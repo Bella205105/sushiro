@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushiro Taiwan - Corporate Profile & Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-sushiro-red { background-color: #d1121b; }
+        .text-sushiro-red { color: #d1121b; }
+        .border-sushiro-red { border-color: #d1121b; }
+        .alibaba-shadow { box-shadow: 0 1px 2px 0 rgba(0,0,0,.08), 0 2px 6px 0 rgba(0,0,0,.08); }
+    </style>
+</head>
+<body class="bg-white font-sans text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white alibaba-shadow sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <img src="./logo.png" alt="Sushiro Logo" class="h-12 mr-3 object-contain">
+                    <span class="text-2xl font-bold text-sushiro-red hidden sm:block">
+                        Sushiro Corp.
+                    </span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#philosophy" class="text-gray-600 hover:text-sushiro-red font-medium">About</a>
+                    <a href="#products" class="text-gray-600 hover:text-sushiro-red font-medium">Products</a>
+                    <a href="#swot" class="text-gray-600 hover:text-sushiro-red font-medium">SWOT Analysis</a>
+                    <a href="#strategy" class="text-gray-600 hover:text-sushiro-red font-medium">Strategy</a>
+                    <button id="wishlist-toggle" class="relative text-gray-600 hover:text-sushiro-red flex items-center transition focus:outline-none" title="Wishlist">
+                        <i class="fa-solid fa-heart text-xl"></i>
+                        <span id="wishlist-count" class="absolute -top-2 -right-2 bg-sushiro-red text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center shadow">0</span>
+                    </button>
+                    <a href="#contact" class="bg-sushiro-red text-white px-4 py-2 rounded-md font-medium hover:bg-red-700 transition shadow">Contact Supplier</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-sushiro-red text-white pb-16 pt-16 border-b-8 border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <div class="mb-4">
+                    <img src="./logo.png" alt="Sushiro Brand" class="h-16 bg-white p-2 rounded shadow-lg inline-block mr-3">
+                    <span class="bg-white text-sushiro-red text-xs font-bold px-2 py-1 rounded uppercase tracking-wide align-middle border-2 border-white">Verified Supplier</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mt-2 leading-tight">Sushiro Taiwan<br><span class="text-gray-100 text-3xl font-light">Leading the Conveyor Belt Sushi Market</span></h1>
+                <p class="mt-4 text-white text-lg">High-quality ingredients, IT-driven management, and unbeatable cost-performance ratio. Discover our corporate strengths and product offerings.</p>
+                <div class="mt-8 flex space-x-4">
+                    <a href="#products" class="bg-white text-sushiro-red hover:bg-gray-100 font-bold py-3 px-6 rounded-md shadow-lg transition">View Products</a>
+                    <a href="#swot" class="bg-transparent border border-white hover:bg-white hover:text-sushiro-red text-white font-bold py-3 px-6 rounded-md shadow-lg transition">Read Analysis</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80" alt="Sushi Showcase" class="rounded-lg shadow-2xl border-4 border-white">
+            </div>
+        </div>
+    </div>
+
+    <!-- Corporate Philosophy Section -->
+    <section id="philosophy" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Corporate Philosophy</h2>
+            <div class="w-24 h-1 bg-sushiro-red mx-auto mb-8"></div>
+            
+            <div class="max-w-3xl mx-auto mb-12">
+                <h3 class="text-2xl text-sushiro-red font-bold mb-4">"Tasty Sushi for All. Tasty Sushi for the Heart."</h3>
+                <p class="text-gray-600 text-lg">
+                    <span class="text-sm font-medium text-gray-400 block mb-2">(美味壽司，肚子飽飽。美味壽司，心也暖暖。)</span>
+                    We believe that delicious sushi brings joy. Our mission is to deliver the highest quality authentic Japanese sushi at the most reasonable prices, ensuring every customer leaves with a satisfied stomach and a warm heart.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-12">
+                <div class="p-6 bg-gray-50 rounded-lg alibaba-shadow border-t-4 border-sushiro-red transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-sushiro-red text-3xl mb-4 text-center"><i class="fa-solid fa-fish-fins"></i></div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2 text-center">Uncompromising Quality</h4>
+                    <p class="text-gray-600 text-sm text-center">Rigorous global sourcing to ensure only the freshest and finest ingredients reach our kitchens.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg alibaba-shadow border-t-4 border-sushiro-red transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-sushiro-red text-3xl mb-4 text-center"><i class="fa-solid fa-microchip"></i></div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2 text-center">Freshness Management</h4>
+                    <p class="text-gray-600 text-sm text-center">Advanced IT systems and IC chips track every plate, guaranteeing optimum freshness on the conveyor belt.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg alibaba-shadow border-t-4 border-sushiro-red transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-sushiro-red text-3xl mb-4 text-center"><i class="fa-solid fa-kitchen-set"></i></div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2 text-center">In-Store Preparation</h4>
+                    <p class="text-gray-600 text-sm text-center">Meticulous in-store cutting and preparation to maximize the natural umami and flavor of our seafood.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Products -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2 border-l-4 border-sushiro-red pl-3">Hot Selling Products</h2>
+            <p class="text-gray-500 mb-8 pl-4">High cost-performance ratio ingredients sourced globally.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./salmon_nigiri.png" alt="Premium Salmon" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Premium Salmon Nigiri</h3>
+                    <p class="text-gray-500 text-sm mt-1">High quality, thick-cut fresh salmon directly sourced.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$60 <span class="text-xs text-gray-400">/ plate</span></span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./tuna_toro.png" alt="Bluefin Tuna" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Bluefin Tuna (Toro)</h3>
+                    <p class="text-gray-500 text-sm mt-1">Limited seasonal premium cut, melt-in-your-mouth texture.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$80 <span class="text-xs text-gray-400">/ plate</span></span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./spicy_miso_ramen.png" alt="Spicy Miso Ramen" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Spicy Miso Ramen</h3>
+                    <p class="text-gray-500 text-sm mt-1">辣味噌拉麵 - Rich and spicy miso broth, a highly popular returning item.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$135 <span class="text-xs text-gray-400">/ bowl</span></span>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./matcha_parfait.png" alt="Matcha Parfait" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Uji Matcha Parfait</h3>
+                    <p class="text-gray-500 text-sm mt-1">Authentic Japanese dessert featuring premium Uji matcha.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$100 <span class="text-xs text-gray-400">/ cup</span></span>
+                    </div>
+                </div>
+                <!-- Product 5 (Chawanmushi) -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./chawanmushi.png" alt="Steamed Egg Custard" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Steamed Egg Custard</h3>
+                    <p class="text-gray-500 text-sm mt-1">Chawanmushi (茶碗蒸) - Classic Japanese savory egg custard with seafood.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$60 <span class="text-xs text-gray-400">/ portion</span></span>
+                    </div>
+                </div>
+                <!-- Product 6 (Sweet Potato Fries) -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./sweet_potato_fries.png" alt="Sweet Potato Fries" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Sweet Potato Fries</h3>
+                    <p class="text-gray-500 text-sm mt-1">地瓜薯條 - Crispy and naturally sweet fried sweet potato sticks.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$40 <span class="text-xs text-gray-400">/ portion</span></span>
+                    </div>
+                </div>
+                <!-- Product 7 (Golden Crispy Fries) -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./golden_fries.png" alt="Golden Crispy Fries" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Golden Crispy Fries</h3>
+                    <p class="text-gray-500 text-sm mt-1">黃金脆薯 - Perfectly golden French fries, a great side dish for all ages.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$50 <span class="text-xs text-gray-400">/ portion</span></span>
+                    </div>
+                </div>
+                <!-- Product 8 (Fried Mozzarella Sticks) -->
+                <div class="bg-white p-4 rounded-lg alibaba-shadow hover:shadow-xl transition group border-t-2 border-transparent hover:border-sushiro-red relative">
+                    <img src="./logo.png" class="absolute top-2 right-2 h-6 opacity-80 z-10 pointer-events-none" alt="Brand">
+                    <button class="wishlist-btn absolute top-3 left-3 z-20 text-gray-300 hover:text-red-500 transition drop-shadow-md focus:outline-none" title="Add to Wishlist">
+                        <i class="fa-solid fa-heart text-2xl drop-shadow-md"></i>
+                    </button>
+                    <a href="https://www.sushiro.com.tw/" target="_blank" class="block h-48 bg-gray-200 rounded-md mb-4 overflow-hidden cursor-pointer">
+                        <img src="./cheese_sticks.png" alt="Fried Mozzarella Sticks" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </a>
+                    <h3 class="font-bold text-lg text-gray-800">Fried Mozzarella Sticks</h3>
+                    <p class="text-gray-500 text-sm mt-1">酥炸莫札瑞拉起司條 - Crispy outside with melted mozzarella cheese inside.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-sushiro-red font-bold">NT$60 <span class="text-xs text-gray-400">/ portion</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SWOT Analysis Section -->
+    <section id="swot" class="py-16 bg-white border-t-2 border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2 text-center">Company Advantages & SWOT Analysis</h2>
+            <div class="w-24 h-1 bg-sushiro-red mx-auto mb-8"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Strengths -->
+                <div class="border border-red-100 bg-white shadow-sm rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4 border-b border-gray-100 pb-3">
+                        <div class="bg-sushiro-red text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Strengths (Internal)</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa-solid fa-check text-sushiro-red mr-2"></i><strong>High Cost-Performance:</strong> Food cost ratio is around 45-50%, higher than industry average.</li>
+                        <li><i class="fa-solid fa-check text-sushiro-red mr-2"></i><strong>IT & Data-Driven:</strong> IC chips track plates (auto-discarded after 350m) and AI predicts demand to minimize waste.</li>
+                        <li><i class="fa-solid fa-check text-sushiro-red mr-2"></i><strong>Global Procurement:</strong> Strong bargaining power from parent company for premium seafood.</li>
+                        <li><i class="fa-solid fa-check text-sushiro-red mr-2"></i><strong>Viral Marketing:</strong> Successful campaigns (e.g., Salmon Chaos, Anime IP collabs).</li>
+                    </ul>
+                </div>
+
+                <!-- Weaknesses -->
+                <div class="border border-red-100 bg-white shadow-sm rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4 border-b border-gray-100 pb-3">
+                        <div class="bg-sushiro-red text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-arrow-trend-down"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Weaknesses (Internal)</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa-solid fa-xmark text-sushiro-red mr-2"></i><strong>High Operational Costs:</strong> High ingredient cost ratio squeezes profit margins during inflation.</li>
+                        <li><i class="fa-solid fa-xmark text-sushiro-red mr-2"></i><strong>Limited Gamification:</strong> Lacks instant entertainment (like Kura Sushi's Gachapon) for family segments.</li>
+                        <li><i class="fa-solid fa-xmark text-sushiro-red mr-2"></i><strong>Open Conveyor Belt Risks:</strong> Susceptible to hygiene concerns caused by customer misconduct.</li>
+                        <li><i class="fa-solid fa-xmark text-sushiro-red mr-2"></i><strong>Long Waiting Times:</strong> Peak hours require long waits even with the App, affecting instant dining intent.</li>
+                    </ul>
+                </div>
+
+                <!-- Opportunities -->
+                <div class="border border-red-100 bg-white shadow-sm rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4 border-b border-gray-100 pb-3">
+                        <div class="bg-sushiro-red text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Opportunities (External)</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa-solid fa-plus text-sushiro-red mr-2"></i><strong>Diversified Store Formats:</strong> Expansion into "SUSHIRO To Go" for commuters and takeout.</li>
+                        <li><i class="fa-solid fa-plus text-sushiro-red mr-2"></i><strong>Smart Upgrades (Digiro):</strong> Interactive digital screens and high-speed delivery lanes for better hygiene.</li>
+                        <li><i class="fa-solid fa-plus text-sushiro-red mr-2"></i><strong>Market Expansion:</strong> High potential in tier-2/3 cities and new shopping malls.</li>
+                        <li><i class="fa-solid fa-plus text-sushiro-red mr-2"></i><strong>Premium Offerings:</strong> Seasonal high-end items (e.g., Tuna/Sea Urchin festivals) to increase AOV.</li>
+                    </ul>
+                </div>
+
+                <!-- Threats -->
+                <div class="border border-red-100 bg-white shadow-sm rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4 border-b border-gray-100 pb-3">
+                        <div class="bg-sushiro-red text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Threats (External)</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa-solid fa-triangle-exclamation text-sushiro-red mr-2"></i><strong>Fierce Competition:</strong> Saturated market against Sushi Express, Kura Sushi, and Hama Sushi.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation text-sushiro-red mr-2"></i><strong>Supply Chain Volatility:</strong> Climate change reducing seafood yields and increasing costs.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation text-sushiro-red mr-2"></i><strong>Labor Shortages:</strong> Difficulty in recruiting staff for the F&B sector, rising labor costs.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation text-sushiro-red mr-2"></i><strong>Price Sensitivity:</strong> Inflation-driven price hikes may deter younger demographics and families.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Section (TOWS) -->
+    <section id="strategy" class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2 text-center">Strategic Roadmap (TOWS)</h2>
+            <div class="w-24 h-1 bg-sushiro-red mx-auto mb-10"></div>
+            
+            <div class="bg-white rounded-lg alibaba-shadow overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                    <div class="p-8 hover:bg-red-50 transition border-b md:border-b-0">
+                        <h4 class="text-lg font-bold text-sushiro-red mb-2"><i class="fa-solid fa-chess-knight mr-2"></i>SO Strategy (Max-Max)</h4>
+                        <p class="text-gray-700"><strong>Leverage Strengths to Maximize Opportunities:</strong> Deploy "Digiro" digital screens to bring IP collaborations to life. Expand "SUSHIRO To Go" utilizing our premium supply chain to capture the commuter market.</p>
+                    </div>
+                    <div class="p-8 hover:bg-red-50 transition">
+                        <h4 class="text-lg font-bold text-sushiro-red mb-2"><i class="fa-solid fa-shield mr-2"></i>ST Strategy (Max-Min)</h4>
+                        <p class="text-gray-700"><strong>Use Strengths to Minimize Threats:</strong> Introduce premium seasonal menus (e.g., Kuro-Maguro Festival) to combat inflation without price wars. Accelerate backend automation to solve labor shortages.</p>
+                    </div>
+                    <div class="p-8 hover:bg-red-50 transition border-t border-gray-100">
+                        <h4 class="text-lg font-bold text-sushiro-red mb-2"><i class="fa-solid fa-puzzle-piece mr-2"></i>WO Strategy (Min-Max)</h4>
+                        <p class="text-gray-700"><strong>Overcome Weaknesses by Exploiting Opportunities:</strong> Implement digital/covered delivery lanes to eliminate hygiene concerns. Enhance App-based point rewards to replace the missing physical gamification factor.</p>
+                    </div>
+                    <div class="p-8 hover:bg-red-50 transition border-t border-gray-100">
+                        <h4 class="text-lg font-bold text-sushiro-red mb-2"><i class="fa-solid fa-umbrella mr-2"></i>WT Strategy (Min-Min)</h4>
+                        <p class="text-gray-700"><strong>Minimize Weaknesses and Avoid Threats:</strong> Diversify seafood sourcing and introduce localized/non-seafood creative items to mitigate climate risks and import cost volatility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact (Alibaba style) -->
+    <footer id="contact" class="bg-sushiro-red text-white py-12 border-t-8 border-red-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-2xl font-bold mb-4 flex items-center">
+                    <img src="./logo.png" alt="Sushiro Logo" class="h-10 bg-white rounded-full p-1 mr-3 shadow-md">
+                    Sushiro Corp.
+                </h3>
+                <p class="text-red-100 text-sm leading-relaxed">Providing authentic, high-quality conveyor belt sushi with advanced IT management systems globally. Experience unbeatable cost-performance value.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 border-b border-red-400 pb-2 inline-block">Contact Us</h3>
+                <ul class="text-red-100 text-sm space-y-3 mt-2">
+                    <li><i class="fa-solid fa-location-dot w-5 text-white"></i> Taipei, Taiwan</li>
+                    <li><i class="fa-solid fa-phone w-5 text-white"></i> +886 (02) 1234-5678</li>
+                    <li><i class="fa-solid fa-envelope w-5 text-white"></i> b2b@sushiro.com.tw</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 border-b border-red-400 pb-2 inline-block">Send Inquiry</h3>
+                <form class="flex flex-col space-y-3 mt-2">
+                    <input type="text" placeholder="Your Name" class="px-3 py-2 bg-white text-gray-800 rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-red-300">
+                    <input type="email" placeholder="Your Email" class="px-3 py-2 bg-white text-gray-800 rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-red-300">
+                    <button type="button" class="bg-red-900 text-white py-2 rounded font-bold hover:bg-gray-900 transition shadow">Contact Supplier</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-red-800 text-center text-red-200 text-sm flex items-center justify-center flex-col">
+            <img src="./logo.png" class="h-8 mb-4 opacity-70 grayscale contrast-200" alt="Sushiro Logo">
+            &copy; 2026 Sushiro Taiwan Corporation. All rights reserved. (Demo Page)
+        </div>
+    </footer>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlist-modal" class="fixed inset-0 bg-black bg-opacity-50 z-[100] hidden flex justify-center items-center backdrop-blur-sm transition-opacity">
+        <div class="bg-white rounded-lg shadow-2xl w-11/12 max-w-lg overflow-hidden transform transition-all">
+            <div class="bg-sushiro-red px-6 py-4 flex justify-between items-center text-white">
+                <h3 class="text-xl font-bold"><i class="fa-solid fa-heart mr-2"></i>My Wishlist</h3>
+                <button id="close-wishlist" class="text-white hover:text-gray-200 focus:outline-none">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+            <div class="p-6 max-h-96 overflow-y-auto">
+                <ul id="wishlist-items" class="divide-y divide-gray-100">
+                    <li class="py-4 text-center text-gray-500">Your wishlist is empty.</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 px-6 py-4 border-t border-gray-100 flex justify-between items-center">
+                <span class="font-bold text-gray-800">Total: <span id="wishlist-total" class="text-sushiro-red">NT$0</span></span>
+                <a href="https://www.sushiro.com.tw/Shop" target="_blank" class="bg-sushiro-red text-white px-6 py-2 rounded font-bold hover:bg-red-800 transition shadow inline-block text-center">Submit Inquiry</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const wishlist = [];
+            const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+            const wishlistCount = document.getElementById('wishlist-count');
+            const wishlistModal = document.getElementById('wishlist-modal');
+            const wishlistToggle = document.getElementById('wishlist-toggle');
+            const closeWishlist = document.getElementById('close-wishlist');
+            const wishlistItemsContainer = document.getElementById('wishlist-items');
+            const wishlistTotal = document.getElementById('wishlist-total');
+
+            // Toggle Wishlist Add/Remove
+            wishlistBtns.forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault(); 
+                    
+                    const card = btn.closest('.relative');
+                    const name = card.querySelector('h3').innerText;
+                    const priceText = card.querySelector('.text-sushiro-red').childNodes[0].nodeValue.trim();
+                    const priceNum = parseInt(priceText.replace(/[^0-9]/g, ''), 10) || 0;
+                    
+                    const itemIndex = wishlist.findIndex(item => item.name === name);
+                    
+                    if (itemIndex > -1) {
+                        // Remove from wishlist
+                        wishlist.splice(itemIndex, 1);
+                        btn.classList.remove('text-red-500');
+                        btn.classList.add('text-gray-300');
+                    } else {
+                        // Add to wishlist
+                        wishlist.push({ name, price: priceNum, priceText });
+                        btn.classList.remove('text-gray-300');
+                        btn.classList.add('text-red-500');
+                    }
+                    
+                    updateWishlistUI();
+                });
+            });
+
+            // Update UI
+            function updateWishlistUI() {
+                wishlistCount.innerText = wishlist.length;
+                if (wishlist.length === 0) {
+                    wishlistItemsContainer.innerHTML = '<li class="py-4 text-center text-gray-500">Your wishlist is empty.</li>';
+                    wishlistTotal.innerText = 'NT$0';
+                } else {
+                    wishlistItemsContainer.innerHTML = '';
+                    let total = 0;
+                    wishlist.forEach((item) => {
+                        total += item.price;
+                        wishlistItemsContainer.innerHTML += `
+                            <li class="py-3 flex justify-between items-center">
+                                <span class="font-medium text-gray-800">${item.name}</span>
+                                <span class="font-bold text-sushiro-red">${item.priceText}</span>
+                            </li>
+                        `;
+                    });
+                    wishlistTotal.innerText = 'NT$' + total;
+                }
+            }
+
+            // Modal Toggles
+            wishlistToggle.addEventListener('click', () => {
+                wishlistModal.classList.remove('hidden');
+            });
+            
+            closeWishlist.addEventListener('click', () => {
+                wishlistModal.classList.add('hidden');
+            });
+            
+            wishlistModal.addEventListener('click', (e) => {
+                if (e.target === wishlistModal) {
+                    wishlistModal.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
